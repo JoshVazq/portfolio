@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { changeMessage } from "../redux/test/actions";
+import { getMessage } from "../redux/test/selectors";
 
 export const Test = ({ message, changeMessage }) => {
   let textInput;
@@ -15,7 +16,7 @@ export const Test = ({ message, changeMessage }) => {
 };
 
 const mapStateToProps = state => ({
-  message: state.message
+  message: getMessage(state)
 });
 
 export default connect(mapStateToProps, { changeMessage })(Test);
