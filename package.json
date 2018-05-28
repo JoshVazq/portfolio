@@ -14,12 +14,15 @@
   },
   "devDependencies": {
     "enzyme": "3.3.0",
-    "react-test-renderer": "16.4.0"
+    "react-test-renderer": "16.4.0",
+    "flow-bin": "^0.72.0",
+    "redux-devtools": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "flow": "flow",
     "eject": "react-scripts eject"
   }
 }

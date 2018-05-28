@@ -1,14 +1,20 @@
+
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import {Profile} from "../model/profile"
 import { fetchProfile } from "../redux/profile/actions";
 import { getProfile } from "../redux/profile/selectors";
-class Profile extends Component {
+
+type Props = {
+  profile: Profile,
+  fetchProfile: Function
+};
+class ProfilePage extends Component<Props> {
   componentWillMount() {
     this.props.fetchProfile("2x03PVsba4qWSom0A8aYMq");
   }
 
   render() {
-    console.log(this.props.profile);
     return (
       <div>
         <h2>Profile</h2>
@@ -20,4 +26,4 @@ class Profile extends Component {
 function mapStateToProps(state) {
   return { profile: getProfile(state) };
 }
-export default connect(mapStateToProps, { fetchProfile })(Profile);
+export default connect(mapStateToProps, { fetchProfile })(ProfilePage);

@@ -1,15 +1,8 @@
-export class ContentfulEntrySys {
-  id: string;
-}
-
-export class ContentfulEntry {
-  sys: ContentfulEntrySys;
-  fileds: any[];
-}
+import {ContentfulEntry} from './contentful';
 
 export class Profile {
-  id: string;
-  name: string;
+  id: string = "id";
+  name: string= "name";
   static fromContentful(data: ContentfulEntry): Profile {
     const profile = new Profile();
     profile.id = data.sys.id;

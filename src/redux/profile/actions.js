@@ -1,4 +1,4 @@
-import { Profile } from "./model";
+import { Profile } from '../../model/profile';
 // entity name
 export const PROFILE = "[Profile]";
 
