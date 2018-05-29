@@ -1,19 +1,17 @@
 import { Profile } from '../../model/profile';
-// entity name
+
 export const PROFILE = "[Profile]";
 
-// action types
 export const FETCH_PROFILE = `${PROFILE} Fetch`;
 export const SET_PROFILE = `${PROFILE} Set`;
 
-//  action creators
-export const fetchProfile = id => ({
+export const fetchProfile = (id: string) => ({
   type: FETCH_PROFILE,
   payload: id
 });
 
-export const setProfile = profile => ({
+export const setProfile = (profile: Profile) => ({
   type: SET_PROFILE,
   payload: profile,
-  meta: { normalize: data => Profile.fromContentful(data) }
+  meta: { normalize: (data: any) => Profile.fromContentful(data) }
 });

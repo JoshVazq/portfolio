@@ -7,7 +7,7 @@ const client = contentful.createClient({
     "0b0cce386c990c73efc99a48bb3fb59d3df3fdd8ce4ce7a968da5b6b91352132"
 });
 
-export const apiMiddleware = ({ dispatch }) => next => action => {
+export const apiMiddleware = ({ dispatch }: any) => (next: Function) => (action: any) => {
   next(action);
 
   if (action.type.includes(API_REQUEST)) {

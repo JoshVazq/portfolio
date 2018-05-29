@@ -1,1 +1,1 @@
-export const getProfile = state => state.profile;
+export const getProfile = (state: any) => state.profile;

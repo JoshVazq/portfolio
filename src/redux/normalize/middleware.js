@@ -1,7 +1,6 @@
-export const normalizeMiddleware = ({ dispatch }) => next => action => {
-  if (action.type.includes("Set") && action.meta.normalize) {
+export const normalizeMiddleware = () => (next: Function) => (action: any) => {
+  if (action.type.includes("Set") && action.meta && typeof action.meta.normalize === "function") {
     action.payload = action.meta.normalize(action.payload);
-    // fire the new action
     next(action);
   } else {
     next(action);

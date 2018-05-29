@@ -1,8 +1,8 @@
 export class ContentfulEntrySys {
-    id: string;
-  }
-  
-  export class ContentfulEntry {
-    sys: ContentfulEntrySys;
-    fileds: any[];
-  }
+  id: string;
+}
+
+export class ContentfulEntry {
+  sys: ContentfulEntrySys;
+  fields: any;
+}
