@@ -15,7 +15,7 @@ export const App = ({ isLoading }) => (
   </div>
 );
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   isLoading: isLoading(state)
 });
 

@@ -76,6 +76,17 @@ describe('profile', () => {
             expect(action.type).toEqual(actions.SET_PROFILE);
             expect(action.payload).toEqual(profile);
         })
+        it('should normalize a profile', () => {
+            const profile = new Profile();
+            const name = "name";
+            const id = "1";
+            profile.id = id;
+            profile.name = name;
+            const action = actions.setProfile(profile);
+            const normalizedProfile = action.meta.normalize({ sys: { id }, fields: { name } })
+            expect(normalizedProfile).toEqual(profile);
+        })
+
 
     })
     describe('reducer', () => {

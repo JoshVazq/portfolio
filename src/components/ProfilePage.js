@@ -9,7 +9,7 @@ type Props = {
   profile: Profile,
   fetchProfile: Function
 };
-class ProfilePage extends Component<Props> {
+export class ProfilePage extends Component<Props> {
   componentWillMount() {
     this.props.fetchProfile("2x03PVsba4qWSom0A8aYMq");
   }
@@ -23,7 +23,6 @@ class ProfilePage extends Component<Props> {
     );
   }
 }
-function mapStateToProps(state) {
-  return { profile: getProfile(state) };
-}
+export const mapStateToProps = (state: any) => ({ profile: getProfile(state) });
+
 export default connect(mapStateToProps, { fetchProfile })(ProfilePage);

@@ -7,15 +7,22 @@ import { profileMiddleware } from "./profile/middleware";
 import { apiMiddleware } from "./api/middleware";
 import { normalizeMiddleware } from "./normalize/middleware";
 
-const rootReducer = combineReducers({
-  profile: profileReducer,
-  ui: uiReducer
-});
-const appMiddleware = [profileMiddleware];
-const coreMiddleware = [apiMiddleware, normalizeMiddleware];
 
-const enhancer = applyMiddleware(...appMiddleware, ...coreMiddleware);
-export const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  enhancer);
+
+export const configureStore = () => {
+
+  const rootReducer = combineReducers({
+    profile: profileReducer,
+    ui: uiReducer
+  });
+  const appMiddleware = [profileMiddleware];
+  const coreMiddleware = [apiMiddleware, normalizeMiddleware];
+
+  const enhancer = applyMiddleware(...appMiddleware, ...coreMiddleware);
+  return createStore(
+    rootReducer,
+    /* istanbul ignore next */
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    enhancer);
+
+};
