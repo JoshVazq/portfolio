@@ -7,10 +7,13 @@ const store = configureStore();
 
 /* istanbul ignore next */
 {
-  render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-    document.getElementById("root")
-  );
+  const node = document.getElementById("root");
+  if (node) {
+    render(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+      node
+    );
+  }
 }

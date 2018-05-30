@@ -7,7 +7,10 @@ const styles = {
   textAlign: "center"
 };
 
-export const App = ({ isLoading }) => (
+type Props = {
+  isLoading: boolean
+};
+export const App = ({ isLoading }: Props) => (
   <div style={styles}>
     <h2>Start editing to see some magic happen {"\u2728"}</h2>
     isLoading : {isLoading.toString()}
@@ -15,7 +18,7 @@ export const App = ({ isLoading }) => (
   </div>
 );
 
-export const mapStateToProps = state => ({
+export const mapStateToProps = (state: any) => ({
   isLoading: isLoading(state)
 });
 
