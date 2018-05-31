@@ -6,8 +6,9 @@ import { Profile } from "../../model/profile";
 import { profileReducer } from "./reducer";
 import { getProfile } from "./selectors";
 
-
 describe('profile', () => {
+
+
     describe('middleware', () => {
 
         it('should not apply middleware when is not a expected action', () => {
@@ -71,27 +72,24 @@ describe('profile', () => {
             expect(action.payload).toEqual(profileId);
         })
         it('should create profile set', () => {
-            const profile = new Profile();
+            const profile = new Profile("");
             const action = actions.setProfile(profile);
             expect(action.type).toEqual(actions.SET_PROFILE);
             expect(action.payload).toEqual(profile);
         })
-        it('should normalize a profile', () => {
-            const profile = new Profile();
-            const name = "name";
-            const id = "1";
-            profile.id = id;
-            profile.name = name;
-            const action = actions.setProfile(profile);
-            const normalizedProfile = action.meta.normalize({ sys: { id }, fields: { name } })
-            expect(normalizedProfile).toEqual(profile);
+        it('normalize should call Profile.fromContentful', () => {
+            const action = actions.setProfile(new Profile(""));
+            const fromContentfulSpy = jest.spyOn(Profile, 'fromContentful');
+            fromContentfulSpy.mockImplementation(() => null);
+            const normalizedProfile = JSON.parse(JSON.stringify(action.meta.normalize()));
+            expect(fromContentfulSpy).toHaveBeenCalled();
         })
 
 
     })
     describe('reducer', () => {
         it('should set the profile', () => {
-            const profile = new Profile();
+            const profile = new Profile("");
             const setProfile = actions.setProfile(profile);
             const state = profileReducer({}, setProfile);
             expect(state).toEqual(profile);
@@ -101,11 +99,12 @@ describe('profile', () => {
     })
     describe('selectors', () => {
         it('should get the profile', () => {
-            const profile = new Profile();
+            const profile = new Profile("");
             const selected = getProfile({ profile });
             expect(selected).toEqual(profile);
         })
 
 
     })
+
 })

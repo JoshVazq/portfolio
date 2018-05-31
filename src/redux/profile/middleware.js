@@ -19,5 +19,6 @@ export const profileMiddleware = () => (next: Function) => (action: any) => {
     case `${PROFILE} ${API_ERROR}`:
       next(setLoader(false));
       break;
+    default:
   }
 };

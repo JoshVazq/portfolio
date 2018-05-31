@@ -1,5 +1,7 @@
 import { createClient } from "contentful";
+import resolveResponse from "contentful-resolve-response";
 import { API_REQUEST, apiSuccess, apiError } from "./actions";
+import * as profileFixure from "../../test/fixtures/contentful/entries_profile.json";
 
 const client = createClient({
   space: "mhfu0fsind5z",
@@ -15,7 +17,8 @@ export const apiMiddleware = ({ dispatch }: any) => (next: Function) => (action:
     return client
       .getEntries({ "sys.id": entryId })
       .then(entries => {
-        dispatch(apiSuccess(entries.items[0], entity));
+        const items = resolveResponse(entries)
+        dispatch(apiSuccess(items[0], entity));
       })
       .catch(error => dispatch(apiError(error, entity)));
   }

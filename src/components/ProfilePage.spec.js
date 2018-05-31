@@ -9,7 +9,7 @@ import { Profile } from "../model/profile";
 
 describe('ProfilePage', () => {
     it('should call fetchProfile on componentDidMount', () => {
-        const profile = new Profile();
+        const profile = new Profile("");
         const fetchProfile = jest.fn();
         const props = { profile, fetchProfile };
         shallow(<ProfilePage {...props} />);
@@ -17,7 +17,7 @@ describe('ProfilePage', () => {
     });
 
     it('shoulg get props from mapStateToProps', () => {
-        const profile = new Profile();
+        const profile = new Profile("");
         const props = mapStateToProps({ profile })
         expect(props.profile).toBe(profile);
     });
