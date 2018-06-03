@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 
-import { ProfilePage, mapStateToProps } from './ProfilePage';
-import { Profile } from "../model/profile";
+import { ProfilePage, mapStateToProps } from './index';
+import { Profile } from "model/profile";
 
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { isLoading } from "../redux/ui/selectors";
-import ProfilePage from "./ProfilePage";
+import { isLoading } from "redux/ui/selectors";
+import ProfilePage from "../Profile";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -12,8 +12,8 @@ type Props = {
 };
 export const App = ({ isLoading }: Props) => (
   <div style={styles}>
-    <h2>Start editing to see some magic happen {"\u2728"}</h2>
-    isLoading : {isLoading.toString()}
+    {/* <h2>Start editing to see some magic happen {"\u2728"}</h2>
+    isLoading : {isLoading.toString()} */}
     <ProfilePage />
   </div>
 );

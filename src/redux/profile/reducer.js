@@ -1,7 +1,7 @@
 import { createReducer } from "../utils";
 import { SET_PROFILE } from "./actions";
 
-const initState = {};
+const initState = null;
 
 export const profileReducer = createReducer(initState, {
   [SET_PROFILE]: (state, action) => {
