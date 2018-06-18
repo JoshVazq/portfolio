@@ -10,7 +10,7 @@ type Props = {
 const renderSkill = (skill: Skill) => {
   const percentage = `${skill.level}%`
   return (
-    <div class="w3-container">
+    <div class="w3-container" key={skill.id}>
       <p>{skill.name}</p>
       <div class="w3-light-grey w3-round-xlarge w3-small">
         <div class="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: percentage }}  > {percentage}</div >

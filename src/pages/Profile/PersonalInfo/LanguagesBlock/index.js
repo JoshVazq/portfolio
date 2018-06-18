@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Skill } from "model/skill";
 
 
 export const LanguagesBlock = () => (

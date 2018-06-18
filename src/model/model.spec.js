@@ -8,8 +8,9 @@ import { Award } from "./award";
 import resolveResponse from "contentful-resolve-response";
 import * as contentfulFixure from "../test/fixtures/contentful/entries_profile.json";
 import * as profileFixure from "../test/fixtures/profile.json";
+import { Period } from "./period";
 describe('model', () => {
-    describe('profile ', () => {
+    describe('Profile ', () => {
         it(' Profile.fromContentful shoul return the expected instance', () => {
             const profileData = resolveResponse(contentfulFixure)[0];
             const normalizedProfile = JSON.parse(JSON.stringify(Profile.fromContentful(profileData)));
@@ -45,6 +46,19 @@ describe('model', () => {
             expect(fromContentfulExperienceSpy).toHaveBeenCalledTimes(1);
             expect(fromContentfulAwardSpy).toHaveBeenCalledTimes(1);
 
+        })
+
+    })
+    describe('Period ', () => {
+        it(' toString should return from to dates', () => {
+            const period = new Period(new Date(2012, 2), new Date(2013, 3));
+            const periodString = period.toString();
+            expect(periodString).toEqual("Mar 2012 - Apr 2013");
+        })
+        it(' toString should return only one date if there is not to', () => {
+            const period = new Period(new Date(2012, 2));
+            const periodString = period.toString();
+            expect(periodString).toEqual("Mar 2012 - ");
         })
 
     })

@@ -21,4 +21,19 @@ describe('ProfilePage', () => {
         const props = mapStateToProps({ profile })
         expect(props.profile).toBe(profile);
     });
+    describe('render', () => {
+        it('shoulg render without crashing', () => {
+            const profile = new Profile("");
+            const fetchProfile = jest.fn();
+            const props = { profile, fetchProfile };
+            shallow(<ProfilePage {...props} />);
+        });
+        it('shoulg not render if there is not profile', () => {
+            const profile = undefined;
+            const fetchProfile = jest.fn();
+            const props = { profile, fetchProfile };
+            const element = shallow(<ProfilePage {...props} />);
+            expect(element.type()).toBeNull();
+        });
+    })
 })

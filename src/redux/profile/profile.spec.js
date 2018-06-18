@@ -4,7 +4,8 @@ import { API_REQUEST, API_SUCCESS, API_ERROR } from "../api/actions";
 import { SET_LOADER } from "../ui/actions";
 import { Profile } from "../../model/profile";
 import { profileReducer } from "./reducer";
-import { getProfile } from "./selectors";
+import { getProfile, getAvatar } from "./selectors";
+import { Asset } from "../../model/asset";
 
 describe('profile', () => {
 
@@ -103,7 +104,14 @@ describe('profile', () => {
             const selected = getProfile({ profile });
             expect(selected).toEqual(profile);
         })
-
+        it('should get the avatar', () => {
+            let avatar = new Asset("");
+            avatar.url = "avatar.png";
+            const profile = new Profile("");
+            profile.avatar = avatar;
+            const selected = getAvatar({ profile });
+            expect(selected).toEqual(avatar);
+        })
 
     })
 
