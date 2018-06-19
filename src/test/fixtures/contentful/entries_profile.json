@@ -18,7 +18,7 @@
                 "id": "2x03PVsba4qWSom0A8aYMq",
                 "type": "Entry",
                 "createdAt": "2018-05-27T15:46:14.745Z",
-                "updatedAt": "2018-05-27T15:49:03.046Z",
+                "updatedAt": "2018-06-19T19:06:01.677Z",
                 "environment": {
                     "sys": {
                         "id": "master",
@@ -26,7 +26,7 @@
                         "linkType": "Environment"
                     }
                 },
-                "revision": 3,
+                "revision": 4,
                 "contentType": {
                     "sys": {
                         "type": "Link",
@@ -40,79 +40,455 @@
                 "name": "Josué Vázquez Rendo",
                 "avatar": {
                     "sys": {
-                        "type": "Link",
-                        "linkType": "Asset",
-                        "id": "1YEFvX0Jes4sygyc08AUSM"
+                        "space": {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Space",
+                                "id": "mhfu0fsind5z"
+                            }
+                        },
+                        "id": "1YEFvX0Jes4sygyc08AUSM",
+                        "type": "Asset",
+                        "createdAt": "2018-05-27T15:44:49.920Z",
+                        "updatedAt": "2018-05-27T15:44:49.920Z",
+                        "environment": {
+                            "sys": {
+                                "id": "master",
+                                "type": "Link",
+                                "linkType": "Environment"
+                            }
+                        },
+                        "revision": 1,
+                        "locale": "en-US"
+                    },
+                    "fields": {
+                        "title": "myself",
+                        "file": {
+                            "url": "//images.ctfassets.net/mhfu0fsind5z/1YEFvX0Jes4sygyc08AUSM/80c148f4f81d39477381c763c51407c1/myself.png",
+                            "details": {
+                                "size": 3214041,
+                                "image": {
+                                    "width": 1656,
+                                    "height": 1488
+                                }
+                            },
+                            "fileName": "myself.png",
+                            "contentType": "image/png"
+                        }
+                    }
+                },
+                "headline": "Front End Developer",
+                "email": "josh.vazq@outlook.com",
+                "phone": {
+                    "sys": {
+                        "space": {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Space",
+                                "id": "mhfu0fsind5z"
+                            }
+                        },
+                        "id": "36xNiFLnGoOWg4aIWmwEKu",
+                        "type": "Entry",
+                        "createdAt": "2018-06-19T19:05:31.506Z",
+                        "updatedAt": "2018-06-19T19:08:41.684Z",
+                        "environment": {
+                            "sys": {
+                                "id": "master",
+                                "type": "Link",
+                                "linkType": "Environment"
+                            }
+                        },
+                        "revision": 2,
+                        "contentType": {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "ContentType",
+                                "id": "phone"
+                            }
+                        },
+                        "locale": "en-US"
+                    },
+                    "fields": {
+                        "prefix": "34",
+                        "kind": "personal",
+                        "number": "722273938"
                     }
                 },
                 "experience": [
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "3eRn3VAH9eOaEuAksQ0G2K"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "3eRn3VAH9eOaEuAksQ0G2K",
+                            "type": "Entry",
+                            "createdAt": "2018-05-27T15:26:40.094Z",
+                            "updatedAt": "2018-05-27T15:26:40.094Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "experience"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "title": "Full Stack Developer",
+                            "company": "Conexiona Telecom S.L.",
+                            "location": {
+                                "lon": -7.863880999999992,
+                                "lat": 42.33578929999999
+                            },
+                            "from": "2012-07-01",
+                            "to": "2014-03-31",
+                            "description": "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform."
                         }
                     }
                 ],
                 "education": [
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "6GGC71CBXy8gAaaCKg8qQY"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "6GGC71CBXy8gAaaCKg8qQY",
+                            "type": "Entry",
+                            "createdAt": "2018-05-27T00:54:49.186Z",
+                            "updatedAt": "2018-05-27T00:54:49.186Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "education"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "school": "CIFP A Carballeira - Marcos Valcárcel",
+                            "degree": "Multiplatform Software Development",
+                            "from": "2011-09-12T00:00+01:00",
+                            "to": "2013-06-01T00:00+01:00"
                         }
                     },
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "17p8KwBYA24YsYgWmOQ6OU"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "17p8KwBYA24YsYgWmOQ6OU",
+                            "type": "Entry",
+                            "createdAt": "2018-05-27T00:52:55.173Z",
+                            "updatedAt": "2018-05-27T00:53:21.756Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 2,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "education"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "school": "CIFP A Carballeira - Marcos Valcárcel",
+                            "degree": "Web Design & Development",
+                            "from": "2013-09-12T00:00+01:00",
+                            "to": "2015-06-01T00:00+01:00"
                         }
                     }
                 ],
                 "skills": [
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "4CAma5d3xCQuauI6GuYqCm"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "4CAma5d3xCQuauI6GuYqCm",
+                            "type": "Entry",
+                            "createdAt": "2018-05-26T18:12:22.094Z",
+                            "updatedAt": "2018-05-26T18:12:22.095Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "skill"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Angular",
+                            "level": 90
                         }
                     },
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "4zC9JHVbvqAg8gIM6aKYGY"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "4zC9JHVbvqAg8gIM6aKYGY",
+                            "type": "Entry",
+                            "createdAt": "2018-05-26T18:11:13.240Z",
+                            "updatedAt": "2018-05-26T18:11:13.240Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "skill"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Javascript",
+                            "level": 95
                         }
                     },
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "13y1M7EP5Uics2mUG0ussS"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "13y1M7EP5Uics2mUG0ussS",
+                            "type": "Entry",
+                            "createdAt": "2018-05-26T18:13:32.425Z",
+                            "updatedAt": "2018-05-31T09:45:41.113Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 2,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "skill"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "NodeJS",
+                            "level": 80
                         }
                     },
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "4UTTZw6xVesaW6EokOMIqM"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "4UTTZw6xVesaW6EokOMIqM",
+                            "type": "Entry",
+                            "createdAt": "2018-05-26T18:12:08.457Z",
+                            "updatedAt": "2018-05-26T18:12:08.457Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "skill"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "ReactJS",
+                            "level": 80
                         }
                     },
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "6wecSVbIoowa4WIOyu0YsE"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "6wecSVbIoowa4WIOyu0YsE",
+                            "type": "Entry",
+                            "createdAt": "2018-05-26T18:12:40.567Z",
+                            "updatedAt": "2018-05-26T18:12:40.567Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "skill"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Typescript",
+                            "level": 90
                         }
                     }
                 ],
                 "awards": [
                     {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "4pL4Wqo2402wq8Km46cSeS"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "4pL4Wqo2402wq8Km46cSeS",
+                            "type": "Entry",
+                            "createdAt": "2018-05-27T15:33:11.215Z",
+                            "updatedAt": "2018-05-27T15:33:11.215Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "award"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "title": "Mobotix Award - Project of the Year 2013",
+                            "date": "2013-09-01",
+                            "issuer": "Mobotix",
+                            "position": {
+                                "sys": {
+                                    "space": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "Space",
+                                            "id": "mhfu0fsind5z"
+                                        }
+                                    },
+                                    "id": "3eRn3VAH9eOaEuAksQ0G2K",
+                                    "type": "Entry",
+                                    "createdAt": "2018-05-27T15:26:40.094Z",
+                                    "updatedAt": "2018-05-27T15:26:40.094Z",
+                                    "environment": {
+                                        "sys": {
+                                            "id": "master",
+                                            "type": "Link",
+                                            "linkType": "Environment"
+                                        }
+                                    },
+                                    "revision": 1,
+                                    "contentType": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "ContentType",
+                                            "id": "experience"
+                                        }
+                                    },
+                                    "locale": "en-US"
+                                },
+                                "fields": {
+                                    "title": "Full Stack Developer",
+                                    "company": "Conexiona Telecom S.L.",
+                                    "location": {
+                                        "lon": -7.863880999999992,
+                                        "lat": 42.33578929999999
+                                    },
+                                    "from": "2012-07-01",
+                                    "to": "2014-03-31",
+                                    "description": "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform."
+                                }
+                            }
                         }
                     }
                 ],
@@ -137,7 +513,7 @@
                     "id": "13y1M7EP5Uics2mUG0ussS",
                     "type": "Entry",
                     "createdAt": "2018-05-26T18:13:32.425Z",
-                    "updatedAt": "2018-05-26T18:13:32.425Z",
+                    "updatedAt": "2018-05-31T09:45:41.113Z",
                     "environment": {
                         "sys": {
                             "id": "master",
@@ -145,7 +521,7 @@
                             "linkType": "Environment"
                         }
                     },
-                    "revision": 1,
+                    "revision": 2,
                     "contentType": {
                         "sys": {
                             "type": "Link",
@@ -195,6 +571,42 @@
                     "degree": "Web Design & Development",
                     "from": "2013-09-12T00:00+01:00",
                     "to": "2015-06-01T00:00+01:00"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "mhfu0fsind5z"
+                        }
+                    },
+                    "id": "36xNiFLnGoOWg4aIWmwEKu",
+                    "type": "Entry",
+                    "createdAt": "2018-06-19T19:05:31.506Z",
+                    "updatedAt": "2018-06-19T19:08:41.684Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 2,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "phone"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "prefix": "34",
+                    "kind": "personal",
+                    "number": "722273938"
                 }
             },
             {
@@ -345,9 +757,44 @@
                     "issuer": "Mobotix",
                     "position": {
                         "sys": {
-                            "type": "Link",
-                            "linkType": "Entry",
-                            "id": "3eRn3VAH9eOaEuAksQ0G2K"
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "mhfu0fsind5z"
+                                }
+                            },
+                            "id": "3eRn3VAH9eOaEuAksQ0G2K",
+                            "type": "Entry",
+                            "createdAt": "2018-05-27T15:26:40.094Z",
+                            "updatedAt": "2018-05-27T15:26:40.094Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "revision": 1,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "experience"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "title": "Full Stack Developer",
+                            "company": "Conexiona Telecom S.L.",
+                            "location": {
+                                "lon": -7.863880999999992,
+                                "lat": 42.33578929999999
+                            },
+                            "from": "2012-07-01",
+                            "to": "2014-03-31",
+                            "description": "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform."
                         }
                     }
                 }

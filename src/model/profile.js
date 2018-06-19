@@ -4,8 +4,12 @@ import { Skill } from "./skill";
 import { Education } from "./education";
 import { Experience } from "./experience";
 import { Award } from "./award";
+import { Phone } from "./phone";
 export class Profile extends ContentfulModel {
   name: string;
+  headline: string;
+  email: string;
+  phone: Phone;
   avatar: Asset;
   skills: Skill[];
   education: Education[];
@@ -15,7 +19,10 @@ export class Profile extends ContentfulModel {
   static fromContentful(data: ContentfulEntry): Profile {
     const profile = new Profile(data.sys.id);
     profile.name = data.fields.name;
+    profile.headline = data.fields.headline;
+    profile.email = data.fields.email;
     profile.avatar = Asset.fromContentful(data.fields.avatar);
+    profile.phone = Phone.fromContentful(data.fields.phone);
     profile.skills = data.fields.skills.map((data) => Skill.fromContentful(data));
     profile.education = data.fields.education.map((data) => Education.fromContentful(data));
     profile.experience = data.fields.experience.map((data) => Experience.fromContentful(data));

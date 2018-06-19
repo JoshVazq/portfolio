@@ -22,13 +22,13 @@ export class ProfilePage extends Component<Props> {
     const profile = this.props.profile;
     if (profile) {
       return (
-        <div class="w3-content w3-margin-top" style={{ maxWidth: "1400px" }} >
+        <div className="w3-content w3-margin-top" style={{ maxWidth: "1400px" }} >
 
-          <div class="w3-row-padding">
+          <div className="w3-row-padding">
 
             <PersonalInfo profile={profile} />
 
-            <div class="w3-twothird">
+            <div className="w3-twothird">
               <WorkBlock experience={profile.experience} />
               <EducationBlock education={profile.education} />
               <SkillsBlock skills={profile.skills} />
@@ -39,14 +39,14 @@ export class ProfilePage extends Component<Props> {
 
         </div >
 
-        /*  <footer class="w3-container w3-teal w3-center w3-margin-top">
+        /*  <footer className="w3-container w3-teal w3-center w3-margin-top">
            <p>Find me on social media.</p>
-           <i class="fa fa-facebook-official w3-hover-opacity"></i>
-           <i class="fa fa-instagram w3-hover-opacity"></i>
-           <i class="fa fa-snapchat w3-hover-opacity"></i>
-           <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-           <i class="fa fa-twitter w3-hover-opacity"></i>
-           <i class="fa fa-linkedin w3-hover-opacity"></i>
+           <i className="fa fa-facebook-official w3-hover-opacity"></i>
+           <i className="fa fa-instagram w3-hover-opacity"></i>
+           <i className="fa fa-snapchat w3-hover-opacity"></i>
+           <i className="fa fa-pinterest-p w3-hover-opacity"></i>
+           <i className="fa fa-twitter w3-hover-opacity"></i>
+           <i className="fa fa-linkedin w3-hover-opacity"></i>
            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
          </footer> */
       );

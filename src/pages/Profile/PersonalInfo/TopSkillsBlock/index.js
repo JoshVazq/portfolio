@@ -14,17 +14,17 @@ const renderSkill = (skill: Skill) => {
   return (
     <div key={skill.id}>
       <p>{skill.name}</p>
-      <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: percentage }}  > {percentage}</div >
+      <div className="w3-light-grey w3-round-xlarge w3-small">
+        <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: percentage }}  > {percentage}</div >
       </div >
     </div>)
 };
 
 export const TopSkillsBlock = ({ skills }: Props) => (
   <div>
-    <p class="w3-large">
+    <p className="w3-large">
       <b>
-        <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
+        <i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
         Top Skills
       </b>
     </p>

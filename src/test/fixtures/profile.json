@@ -1,6 +1,19 @@
 {
     "id": "2x03PVsba4qWSom0A8aYMq",
     "name": "Josué Vázquez Rendo",
+    "headline": "Front End Developer",
+    "email": "josh.vazq@outlook.com",
+    "avatar": {
+        "id": "1YEFvX0Jes4sygyc08AUSM",
+        "title": "myself",
+        "url": "//images.ctfassets.net/mhfu0fsind5z/1YEFvX0Jes4sygyc08AUSM/80c148f4f81d39477381c763c51407c1/myself.png"
+    },
+    "phone": {
+        "id": "36xNiFLnGoOWg4aIWmwEKu",
+        "prefix": "34",
+        "number": "722273938",
+        "kind": "personal"
+    },
     "skills": [
         {
             "id": "4CAma5d3xCQuauI6GuYqCm",
@@ -84,10 +97,5 @@
             },
             "issuer": "Mobotix"
         }
-    ],
-    "avatar": {
-        "id": "1YEFvX0Jes4sygyc08AUSM",
-        "title": "myself",
-        "url": "//images.ctfassets.net/mhfu0fsind5z/1YEFvX0Jes4sygyc08AUSM/80c148f4f81d39477381c763c51407c1/myself.png"
-    }
+    ]
 }

@@ -4,6 +4,7 @@ import { Skill } from "./skill";
 import { Education } from "./education";
 import { Experience } from "./experience";
 import { Award } from "./award";
+import { Phone } from "./phone";
 
 import resolveResponse from "contentful-resolve-response";
 import * as contentfulFixure from "../test/fixtures/contentful/entries_profile.json";
@@ -24,6 +25,9 @@ describe('model', () => {
             const fromContentfulAssetSpy = jest.spyOn(Asset, 'fromContentful');
             fromContentfulAssetSpy.mockImplementation(() => null);
 
+            const fromContentfulPhoneSpy = jest.spyOn(Phone, 'fromContentful');
+            fromContentfulAssetSpy.mockImplementation(() => null);
+
             const fromContentfulSkillSpy = jest.spyOn(Skill, 'fromContentful');
             fromContentfulSkillSpy.mockImplementation(() => null);
 
@@ -41,6 +45,7 @@ describe('model', () => {
 
             expect(fromContentfulSpy).toHaveBeenCalled();
             expect(fromContentfulAssetSpy).toHaveBeenCalledTimes(1);
+            expect(fromContentfulPhoneSpy).toHaveBeenCalledTimes(1);
             expect(fromContentfulSkillSpy).toHaveBeenCalledTimes(5);
             expect(fromContentfulEducationSpy).toHaveBeenCalledTimes(2);
             expect(fromContentfulExperienceSpy).toHaveBeenCalledTimes(1);
@@ -59,6 +64,22 @@ describe('model', () => {
             const period = new Period(new Date(2012, 2));
             const periodString = period.toString();
             expect(periodString).toEqual("Mar 2012 - ");
+        })
+
+    })
+    describe('Period ', () => {
+        it(' toString should return the phone with prefix', () => {
+            const phone = new Phone('');
+            phone.prefix = '34';
+            phone.number = '111111111';
+            const number = phone.toString();
+            expect(number).toEqual(`+${phone.prefix} ${phone.number}`);
+        })
+        it(' toString should return the phone without prefix', () => {
+            const phone = new Phone('');
+            phone.number = '111111111';
+            const number = phone.toString();
+            expect(number).toEqual(`${phone.number}`);
         })
 
     })
