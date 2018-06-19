@@ -1,7 +1,12 @@
 {
-    "javascript.validate.enable": false,
-    "editor.formatOnSave": true,
-    "flow.enabled": true,
-    "flow.runOnAllFiles": true,
-    "flow.useNPMPackagedFlow": true
+  "javascript.validate.enable": false,
+  "flow.enabled": true,
+  "flow.runOnAllFiles": true,
+  "flow.useNPMPackagedFlow": true,
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 100
 }

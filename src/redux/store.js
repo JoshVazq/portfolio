@@ -1,16 +1,13 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 
-import { uiReducer } from "./ui/reducer";
-import { profileReducer } from "./profile/reducer";
+import { uiReducer } from './ui/reducer';
+import { profileReducer } from './profile/reducer';
 
-import { profileMiddleware } from "./profile/middleware";
-import { apiMiddleware } from "./api/middleware";
-import { normalizeMiddleware } from "./normalize/middleware";
-
-
+import { profileMiddleware } from './profile/middleware';
+import { apiMiddleware } from './api/middleware';
+import { normalizeMiddleware } from './normalize/middleware';
 
 export const configureStore = () => {
-
   const rootReducer = combineReducers({
     profile: profileReducer,
     ui: uiReducer
@@ -23,6 +20,6 @@ export const configureStore = () => {
     rootReducer,
     /* istanbul ignore next */
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-    enhancer);
-
+    enhancer
+  );
 };

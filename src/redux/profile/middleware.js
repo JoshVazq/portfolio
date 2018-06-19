@@ -1,6 +1,6 @@
-import { PROFILE, FETCH_PROFILE, setProfile } from "./actions";
-import { apiRequest, API_SUCCESS, API_ERROR } from "../api/actions";
-import { setLoader } from "../ui/actions";
+import { PROFILE, FETCH_PROFILE, setProfile } from './actions';
+import { apiRequest, API_SUCCESS, API_ERROR } from '../api/actions';
+import { setLoader } from '../ui/actions';
 
 export const profileMiddleware = () => (next: Function) => (action: any) => {
   next(action);
