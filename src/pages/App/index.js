@@ -1,9 +1,9 @@
-import React from "react";
-import { connect } from "react-redux";
-import { isLoading } from "redux/ui/selectors";
-import ProfilePage from "../Profile";
+import React from 'react';
+import { connect } from 'react-redux';
+import { isLoading } from 'redux/ui/selectors';
+import ProfilePage from '../Profile';
 /* import NavBar from "./NavBar";*/
-import "./style.css"
+import './style.css';
 
 type Props = {
   isLoading: boolean
@@ -11,12 +11,14 @@ type Props = {
 export const App = ({ isLoading }: Props) => (
   <div>
     {/* <NavBar /> */}
-    <div id="main"><ProfilePage /></div>
+    <div id="main">
+      <ProfilePage />
+    </div>
   </div>
 );
 
 export const mapStateToProps = (state: any) => ({
-  isLoading: isLoading(state),
+  isLoading: isLoading(state)
 });
 
 export default connect(mapStateToProps)(App);

@@ -1,19 +1,19 @@
-const formatOptions = { year: "numeric", month: "short" };
+const formatOptions = { year: 'numeric', month: 'short' };
 export class Period {
-    from: Date;
-    to: Date;
+  from: Date;
+  to: Date;
 
-    constructor(from: Date, to?: Date) {
-        this.from = from;
-        if (to) {
-            this.to = to;
-        }
+  constructor(from: Date, to?: Date) {
+    this.from = from;
+    if (to) {
+      this.to = to;
     }
-    toString() {
-        //TODO: Calculate only on change dates
-        //new Intl.DateTimeFormat([], { year: 'numeric', month: 'short', }).format(from);
-        const from = this.from.toLocaleDateString([], formatOptions);
-        const to = (this.to && this.to.toLocaleDateString([], formatOptions)) || "";
-        return `${from} - ${to}`;
-    }
+  }
+  toString() {
+    //TODO: Calculate only on change dates
+    //new Intl.DateTimeFormat([], { year: 'numeric', month: 'short', }).format(from);
+    const from = this.from.toLocaleDateString([], formatOptions);
+    const to = (this.to && this.to.toLocaleDateString([], formatOptions)) || '';
+    return `${from} - ${to}`;
+  }
 }

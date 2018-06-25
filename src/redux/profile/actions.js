@@ -1,6 +1,6 @@
 import { Profile } from '../../model/profile';
 
-export const PROFILE = "[Profile]";
+export const PROFILE = '[Profile]';
 
 export const FETCH_PROFILE = `${PROFILE} Fetch`;
 export const SET_PROFILE = `${PROFILE} Set`;

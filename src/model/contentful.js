@@ -11,5 +11,4 @@ export class ContentfulModel {
   constructor(id: string) {
     this.id = id;
   }
-
 }
