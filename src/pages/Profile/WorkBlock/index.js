@@ -1,6 +1,7 @@
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
 import { Experience } from 'model/experience';
+import { sortByFromDesc } from '../../../utils';
 
 type Props = {
   experience: Experience[]
@@ -12,7 +13,7 @@ export const WorkBlock = ({ experience }: Props) => (
       <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal" />
       Work Experience
     </h2>
-    {experience.map(work => (
+    {experience.sort(sortByFromDesc).map(work => (
       <div className="w3-container" key={work.id}>
         <h5 className="w3-opacity">
           <b>
@@ -23,7 +24,7 @@ export const WorkBlock = ({ experience }: Props) => (
           <i className="fa fa-calendar fa-fw w3-margin-right" />
           {work.dates.toString()}
         </h6>
-        <Markdown>{work.description}</Markdown>
+        {work.description && <Markdown>{work.description}</Markdown>}
         <hr />
       </div>
     ))}

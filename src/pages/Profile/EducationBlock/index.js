@@ -1,5 +1,6 @@
 import React from 'react';
 import { Education } from 'model/education';
+import { sortByFromDesc } from '../../../utils';
 
 type Props = {
   education: Education[]
@@ -10,7 +11,7 @@ export const EducationBlock = ({ education }: Props) => (
     <h2 className="w3-text-grey w3-padding-16">
       <i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal" />Education
     </h2>
-    {education.map((edu: Education) => (
+    {education.sort(sortByFromDesc).map((edu: Education) => (
       <div className="w3-container" key={edu.id}>
         <h5 className="w3-opacity">
           <b>{edu.degree}</b>

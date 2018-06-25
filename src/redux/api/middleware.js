@@ -1,7 +1,7 @@
 import { createClient } from 'contentful';
 import resolveResponse from 'contentful-resolve-response';
 import { API_REQUEST, apiSuccess, apiError } from './actions';
-import * as profileFixure from '../../test/fixtures/contentful/entries_profile.json';
+//import * as profileFixure from '../../test/fixtures/contentful/entries_profile.json';
 
 let client = createClient({
   space: 'mhfu0fsind5z',
