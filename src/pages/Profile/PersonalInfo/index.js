@@ -13,39 +13,35 @@ export const PersonalInfo = ({ profile }: Props) => {
       title={profile.avatar.title}
       alt={profile.avatar.description}
       src={profile.avatar.url}
-      style={{ width: '100%' }}
+      /* className="br-100 h4 w4 dib ba b--black-05 pa2" */
     />
   );
   return (
-    <div className="w3-third">
-      <div className="w3-white w3-text-grey w3-card-4">
-        <div className="w3-display-container">
-          {avatar}
-          <div className="w3-container w3-text-black" style={{ textAlign: 'center' }}>
-            <h2>{profile.name}</h2>
-          </div>
-        </div>
-        <div className="w3-container">
-          <p>
-            <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal" />
-            {profile.headline}
-          </p>
-          {/* <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p> */}
-          <p>
-            <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" />
-            {profile.email}
-          </p>
-          <p>
-            <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal" />
-            {profile.phone && profile.phone.toString()}
-          </p>
-          <hr />
-
-          <TopSkillsBlock skills={profile.skills} />
-          <LanguagesBlock />
-        </div>
+    /* center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 */
+    <article className="w-33 fl shadow-1 bg-white">
+      <div className="tc">
+        {avatar}
+        <h2>{profile.name}</h2>
       </div>
-      <br />
-    </div>
+      <div className="w3-container  pa3 pa4-ns">
+        <p>
+          <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal" />
+          {profile.headline}
+        </p>
+        {/* <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p> */}
+        <p>
+          <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" />
+          {profile.email}
+        </p>
+        <p>
+          <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal" />
+          {profile.phone && profile.phone.toString()}
+        </p>
+        <hr />
+
+        <TopSkillsBlock skills={profile.skills} />
+        <LanguagesBlock />
+      </div>
+    </article>
   );
 };

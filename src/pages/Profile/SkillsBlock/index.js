@@ -22,7 +22,7 @@ const renderSkill = (skill: Skill) => {
 };
 
 export const SkillsBlock = ({ skills }: Props) => (
-  <div className="w3-container w3-card w3-white w3-margin-bottom" id="skills">
+  <div className="fl shadow-1 mv3  bg-white pa3" id="skills">
     <h2 className="w3-text-grey w3-padding-16">
       <i className="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal" />Skills
     </h2>

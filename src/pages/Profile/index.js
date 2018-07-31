@@ -21,11 +21,11 @@ export class ProfilePage extends Component<Props> {
     const profile = this.props.profile;
     if (profile) {
       return (
-        <div className="w3-content w3-margin-top" style={{ maxWidth: '1400px' }}>
-          <div className="w3-row-padding">
+        <div className="mt2" style={{ maxWidth: '1400px' }}>
+          <div className="ph2">
             <PersonalInfo profile={profile} />
 
-            <div className="w3-twothird">
+            <div className="fr ph2" style={{ width: '66%' }}>
               <WorkBlock experience={profile.experience} />
               <EducationBlock education={profile.education} />
               <SkillsBlock skills={profile.skills} />

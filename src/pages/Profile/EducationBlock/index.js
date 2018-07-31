@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const EducationBlock = ({ education }: Props) => (
-  <div className="w3-container w3-card w3-white w3-margin-bottom">
+  <div className="shadow-1  bg-white">
     <h2 className="w3-text-grey w3-padding-16">
       <i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal" />Education
     </h2>
