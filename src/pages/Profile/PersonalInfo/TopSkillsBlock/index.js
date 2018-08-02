@@ -12,10 +12,8 @@ const renderSkill = (skill: Skill) => {
   return (
     <div key={skill.id}>
       <p>{skill.name}</p>
-      <div className="w3-light-grey w3-round-xlarge w3-small">
-        <div
-          className="w3-container w3-center w3-round-xlarge w3-teal"
-          style={{ width: percentage }}>
+      <div className="bg-light-gray br-pill w3-small">
+        <div className="ph3 pv1 tc f7 br-pill bg-teal" style={{ width: percentage }}>
           {percentage}
         </div>
       </div>
@@ -27,13 +25,13 @@ export const TopSkillsBlock = ({ skills }: Props) => (
   <div>
     <p className="w3-large">
       <b>
-        <i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal" />
+        <i className="fa fa-asterisk fa-fw mr3 teal" />
         Top Skills
       </b>
     </p>
     {skills
       .sort(sortSkill)
-      .slice(0, 3)
+      .slice(0, 2)
       .map(renderSkill)}
     <a href="#skills"> See more </a>
 

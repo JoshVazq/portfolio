@@ -21,11 +21,11 @@ export class ProfilePage extends Component<Props> {
     const profile = this.props.profile;
     if (profile) {
       return (
-        <div className="mt2" style={{ maxWidth: '1400px' }}>
+        <div className="mt3 gray" /* style={{ maxWidth: '1400px' }} */>
           <div className="ph2">
             <PersonalInfo profile={profile} />
 
-            <div className="fr ph2" style={{ width: '66%' }}>
+            <div className="ph2 ml7-ns ml0-l fr-l w-75-l">
               <WorkBlock experience={profile.experience} />
               <EducationBlock education={profile.education} />
               <SkillsBlock skills={profile.skills} />
@@ -33,7 +33,7 @@ export class ProfilePage extends Component<Props> {
           </div>
         </div>
 
-        /*  <footer className="w3-container w3-teal w3-center w3-margin-top">
+        /*  <footer className="ph3 bg-teal w3-center w3-margin-top">
            <p>Find me on social media.</p>
            <i className="fa fa-facebook-official w3-hover-opacity"></i>
            <i className="fa fa-instagram w3-hover-opacity"></i>

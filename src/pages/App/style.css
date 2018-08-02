@@ -1,1 +1,23 @@
 @import '~tachyons';
+
+.teal {
+  color: #009688;
+}
+.bg-teal {
+  color: white;
+  background-color: #009688;
+}
+
+/* .detail-block:not(:last-of-type)  {
+  
+} */
+.detail-block:last-child {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  &:visited {
+  }
+}

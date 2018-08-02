@@ -5,24 +5,30 @@ import { sortByFromDesc } from '../../../utils';
 type Props = {
   education: Education[]
 };
-
+function renderEducationList(list) {
+  const lastIndex = list.length - 1;
+  return list.sort(sortByFromDesc).map((education: Education, i) => (
+    <div className={'ph3' + (lastIndex !== i ? ' bb b--light-gray' : '')} key={education.id}>
+      <h3 className="fw4 w3-opacity">
+        <b>{education.degree}</b>
+      </h3>
+      <h4 className="teal">
+        <i className="fa fa-calendar fa-fw mr3" />
+        {education.dates.toString()}
+      </h4>
+      <h4 className="teal">
+        <i className="fa fa-building fa-fw mr3" />
+        {education.school}
+      </h4>
+      {/* <p>{education.description}</p> */}
+    </div>
+  ));
+}
 export const EducationBlock = ({ education }: Props) => (
-  <div className="shadow-1  bg-white">
+  <div className="shadow-1  bg-white pa3 mv3">
     <h2 className="w3-text-grey w3-padding-16">
-      <i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal" />Education
+      <i className="fa fa-graduation-cap fa-fw mr3 w3-xxlarge teal" />Education
     </h2>
-    {education.sort(sortByFromDesc).map((edu: Education) => (
-      <div className="w3-container" key={edu.id}>
-        <h5 className="w3-opacity">
-          <b>{edu.degree}</b>
-        </h5>
-        <h6 className="w3-text-teal">
-          <i className="fa fa-calendar fa-fw w3-margin-right" />
-          {edu.dates.toString()}
-        </h6>
-        <p>{edu.school}</p>
-        <hr />
-      </div>
-    ))}
+    {renderEducationList(education)}
   </div>
 );

@@ -1,0 +1,12 @@
+.avatar {
+  background-color: #ede9e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 60em) {
+    img {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}

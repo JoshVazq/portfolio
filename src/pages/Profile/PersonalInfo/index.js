@@ -4,6 +4,8 @@ import { Profile } from 'model/profile';
 import { TopSkillsBlock } from './TopSkillsBlock';
 import { LanguagesBlock } from './LanguagesBlock';
 
+import './style.css';
+
 type Props = {
   profile: Profile
 };
@@ -16,31 +18,38 @@ export const PersonalInfo = ({ profile }: Props) => {
       /* className="br-100 h4 w4 dib ba b--black-05 pa2" */
     />
   );
-  return (
-    /* center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 */
-    <article className="w-33 fl shadow-1 bg-white">
-      <div className="tc">
-        {avatar}
-        <h2>{profile.name}</h2>
-      </div>
-      <div className="w3-container  pa3 pa4-ns">
-        <p>
-          <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal" />
-          {profile.headline}
-        </p>
-        {/* <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p> */}
-        <p>
-          <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" />
-          {profile.email}
-        </p>
-        <p>
-          <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal" />
-          {profile.phone && profile.phone.toString()}
-        </p>
-        <hr />
+  /*   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  fixed-ns bottom-0-ns
+  */
 
-        <TopSkillsBlock skills={profile.skills} />
-        <LanguagesBlock />
+  return (
+    <article className="ph2 mb3 mb0-ns bottom-1-ns top-1-ns w5-ns fixed-ns flex-ns flex-column-ns flex-column-ns w-25-l">
+      <div className="bg-white shadow-1">
+        <div className="tc avatar">{avatar}</div>
+        <h2 className="tc normal f4">{profile.name}</h2>
+        <div className="ph3">
+          <p>
+            <i className="fa fa-briefcase fa-fw mr3 w3-large teal" />
+            {profile.headline}
+          </p>
+          {/* <p><i className="fa fa-home fa-fw mr3 w3-large teal"></i>London, UK</p> */}
+          <p>
+            <i className="fa fa-envelope fa-fw mr3 w3-large teal" />
+            {profile.email}
+          </p>
+          <p>
+            <i className="fa fa-phone fa-fw mr3 w3-large teal" />
+            {profile.phone && profile.phone.toString()}
+          </p>
+          <hr />
+
+          <TopSkillsBlock skills={profile.skills} />
+          <LanguagesBlock />
+        </div>
       </div>
     </article>
   );

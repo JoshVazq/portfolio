@@ -19,7 +19,7 @@ export const NavBar = ({ avatar }: Props) => (
       />
     )}
 
-    <a href="/home" className="w3-bar-item w3-button w3-padding-large w3-teal">
+    <a href="/home" className="w3-bar-item w3-button w3-padding-large bg-teal">
       <i className="fa fa-home w3-xxlarge" />
       <p>HOME</p>
     </a>

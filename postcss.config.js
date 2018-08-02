@@ -3,6 +3,7 @@ module.exports = {
     'postcss-preset-env': {
       stage: 0
     },
-    'postcss-nested': {}
+    'postcss-nested': {},
+    'postcss-extend': {}
   }
 };
