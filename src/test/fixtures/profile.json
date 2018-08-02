@@ -1,101 +1,104 @@
 {
-    "id": "2x03PVsba4qWSom0A8aYMq",
-    "name": "Josué Vázquez Rendo",
-    "headline": "Front End Developer",
-    "email": "josh.vazq@outlook.com",
-    "avatar": {
-        "id": "1YEFvX0Jes4sygyc08AUSM",
-        "title": "myself",
-        "url": "//images.ctfassets.net/mhfu0fsind5z/1YEFvX0Jes4sygyc08AUSM/80c148f4f81d39477381c763c51407c1/myself.png"
+  "id": "2x03PVsba4qWSom0A8aYMq",
+  "name": "Josué Vázquez Rendo",
+  "headline": "Front End Developer",
+  "email": "josh.vazq@outlook.com",
+  "avatar": {
+    "id": "1YEFvX0Jes4sygyc08AUSM",
+    "title": "myself",
+    "url":
+      "//images.ctfassets.net/mhfu0fsind5z/1YEFvX0Jes4sygyc08AUSM/80c148f4f81d39477381c763c51407c1/myself.png"
+  },
+  "phone": {
+    "id": "36xNiFLnGoOWg4aIWmwEKu",
+    "prefix": "34",
+    "number": "722273938",
+    "kind": "personal"
+  },
+  "skills": [
+    {
+      "id": "4CAma5d3xCQuauI6GuYqCm",
+      "name": "Angular",
+      "level": 90
     },
-    "phone": {
-        "id": "36xNiFLnGoOWg4aIWmwEKu",
-        "prefix": "34",
-        "number": "722273938",
-        "kind": "personal"
+    {
+      "id": "4zC9JHVbvqAg8gIM6aKYGY",
+      "name": "Javascript",
+      "level": 95
     },
-    "skills": [
-        {
-            "id": "4CAma5d3xCQuauI6GuYqCm",
-            "name": "Angular",
-            "level": 90
+    {
+      "id": "13y1M7EP5Uics2mUG0ussS",
+      "name": "NodeJS",
+      "level": 80
+    },
+    {
+      "id": "4UTTZw6xVesaW6EokOMIqM",
+      "name": "ReactJS",
+      "level": 80
+    },
+    {
+      "id": "6wecSVbIoowa4WIOyu0YsE",
+      "name": "Typescript",
+      "level": 90
+    }
+  ],
+  "education": [
+    {
+      "id": "6GGC71CBXy8gAaaCKg8qQY",
+      "school": "CIFP A Carballeira - Marcos Valcárcel",
+      "degree": "Multiplatform Software Development",
+      "dates": {
+        "from": "2011-09-11T23:00:00.000Z",
+        "to": "2013-05-31T23:00:00.000Z"
+      }
+    },
+    {
+      "id": "17p8KwBYA24YsYgWmOQ6OU",
+      "school": "CIFP A Carballeira - Marcos Valcárcel",
+      "degree": "Web Design & Development",
+      "dates": {
+        "from": "2013-09-11T23:00:00.000Z",
+        "to": "2015-05-31T23:00:00.000Z"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "id": "3eRn3VAH9eOaEuAksQ0G2K",
+      "title": "Full Stack Developer",
+      "company": "Conexiona Telecom S.L.",
+      "description":
+        "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform.",
+      "dates": {
+        "from": "2012-07-01T00:00:00.000Z",
+        "to": "2014-03-31T00:00:00.000Z"
+      },
+      "location": {
+        "lat": 42.33578929999999,
+        "lon": -7.863880999999992
+      }
+    }
+  ],
+  "awards": [
+    {
+      "id": "4pL4Wqo2402wq8Km46cSeS",
+      "title": "Mobotix Award - Project of the Year 2013",
+      "position": {
+        "id": "3eRn3VAH9eOaEuAksQ0G2K",
+        "title": "Full Stack Developer",
+        "company": "Conexiona Telecom S.L.",
+        "description":
+          "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform.",
+        "dates": {
+          "from": "2012-07-01T00:00:00.000Z",
+          "to": "2014-03-31T00:00:00.000Z"
         },
-        {
-            "id": "4zC9JHVbvqAg8gIM6aKYGY",
-            "name": "Javascript",
-            "level": 95
-        },
-        {
-            "id": "13y1M7EP5Uics2mUG0ussS",
-            "name": "NodeJS",
-            "level": 80
-        },
-        {
-            "id": "4UTTZw6xVesaW6EokOMIqM",
-            "name": "ReactJS",
-            "level": 80
-        },
-        {
-            "id": "6wecSVbIoowa4WIOyu0YsE",
-            "name": "Typescript",
-            "level": 90
+        "location": {
+          "lat": 42.33578929999999,
+          "lon": -7.863880999999992
         }
-    ],
-    "education": [
-        {
-            "id": "6GGC71CBXy8gAaaCKg8qQY",
-            "school": "CIFP A Carballeira - Marcos Valcárcel",
-            "degree": "Multiplatform Software Development",
-            "dates": {
-                "from": "2011-09-11T23:00:00.000Z",
-                "to": "2013-05-31T23:00:00.000Z"
-            }
-        },
-        {
-            "id": "17p8KwBYA24YsYgWmOQ6OU",
-            "school": "CIFP A Carballeira - Marcos Valcárcel",
-            "degree": "Web Design & Development",
-            "dates": {
-                "from": "2013-09-11T23:00:00.000Z",
-                "to": "2015-05-31T23:00:00.000Z"
-            }
-        }
-    ],
-    "experience": [
-        {
-            "id": "3eRn3VAH9eOaEuAksQ0G2K",
-            "title": "Full Stack Developer",
-            "company": "Conexiona Telecom S.L.",
-            "description": "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform.",
-            "dates": {
-                "from": "2012-07-01T00:00:00.000Z",
-                "to": "2014-03-31T00:00:00.000Z"
-            },
-            "location": {
-                "lat": 42.33578929999999,
-                "lon": -7.863880999999992
-            }
-        }
-    ],
-    "awards": [
-        {
-            "id": "4pL4Wqo2402wq8Km46cSeS",
-            "title": "Mobotix Award - Project of the Year 2013",
-            "position": {
-                "id": "3eRn3VAH9eOaEuAksQ0G2K",
-                "title": "Full Stack Developer",
-                "company": "Conexiona Telecom S.L.",
-                "description": "\n[iPlace](https://iplace.es) developer.\n[iPetrol](https://ipetrol.es) developer.\n\nDevelopment of a complete surveillance management system with Mobotix cameras integrated in iPlace and iPetrol platform.",
-                "dates": {
-                    "from": "2012-07-01T00:00:00.000Z",
-                    "to": "2014-03-31T00:00:00.000Z"
-                },
-                "location": {
-                    "lat": 42.33578929999999,
-                    "lon": -7.863880999999992
-                }
-            },
-            "issuer": "Mobotix"
-        }
-    ]
+      },
+      "issuer": "Mobotix"
+    }
+  ]
 }

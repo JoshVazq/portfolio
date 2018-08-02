@@ -9,7 +9,7 @@ type Props = {
   isLoading: boolean
 };
 export const App = ({ isLoading }: Props) => (
-  <div>
+  <div className="sans-serif">
     {/* <NavBar /> */}
     <div id="main">
       <ProfilePage />

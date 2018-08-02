@@ -4,6 +4,8 @@ import { Profile } from 'model/profile';
 import { TopSkillsBlock } from './TopSkillsBlock';
 import { LanguagesBlock } from './LanguagesBlock';
 
+import './style.css';
+
 type Props = {
   profile: Profile
 };
@@ -13,30 +15,34 @@ export const PersonalInfo = ({ profile }: Props) => {
       title={profile.avatar.title}
       alt={profile.avatar.description}
       src={profile.avatar.url}
-      style={{ width: '100%' }}
+      /* className="br-100 h4 w4 dib ba b--black-05 pa2" */
     />
   );
+  /*   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  fixed-ns bottom-0-ns
+  */
+
   return (
-    <div className="w3-third">
-      <div className="w3-white w3-text-grey w3-card-4">
-        <div className="w3-display-container">
-          {avatar}
-          <div className="w3-container w3-text-black" style={{ textAlign: 'center' }}>
-            <h2>{profile.name}</h2>
-          </div>
-        </div>
-        <div className="w3-container">
+    <article className="ph2 mb3 mb0-ns bottom-1-ns top-1-ns w5-ns fixed-ns flex-ns flex-column-ns flex-column-ns w-25-l">
+      <div className="bg-white shadow-1">
+        <div className="tc avatar">{avatar}</div>
+        <h2 className="tc normal f4">{profile.name}</h2>
+        <div className="ph3">
           <p>
-            <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal" />
+            <i className="fa fa-briefcase fa-fw mr3 w3-large teal" />
             {profile.headline}
           </p>
-          {/* <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p> */}
+          {/* <p><i className="fa fa-home fa-fw mr3 w3-large teal"></i>London, UK</p> */}
           <p>
-            <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" />
+            <i className="fa fa-envelope fa-fw mr3 w3-large teal" />
             {profile.email}
           </p>
           <p>
-            <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal" />
+            <i className="fa fa-phone fa-fw mr3 w3-large teal" />
             {profile.phone && profile.phone.toString()}
           </p>
           <hr />
@@ -45,7 +51,6 @@ export const PersonalInfo = ({ profile }: Props) => {
           <LanguagesBlock />
         </div>
       </div>
-      <br />
-    </div>
+    </article>
   );
 };
