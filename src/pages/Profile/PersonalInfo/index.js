@@ -1,10 +1,8 @@
 import React from 'react';
 import { Profile } from 'model/profile';
 
-import { TopSkillsBlock } from './TopSkillsBlock';
-import { LanguagesBlock } from './LanguagesBlock';
-
-import './style.css';
+/* import { TopSkillsBlock } from './TopSkillsBlock';
+import { LanguagesBlock } from './LanguagesBlock'; */
 
 type Props = {
   profile: Profile
@@ -15,40 +13,42 @@ export const PersonalInfo = ({ profile }: Props) => {
       title={profile.avatar.title}
       alt={profile.avatar.description}
       src={profile.avatar.url}
-      /* className="br-100 h4 w4 dib ba b--black-05 pa2" */
+      className="bg-ecru-white w5 br-100"
     />
   );
-  /*   top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  bottom: 0;
-  fixed-ns bottom-0-ns
-  */
-
   return (
-    <article className="ph2 mb3 mb0-ns bottom-1-ns top-1-ns w5-ns fixed-ns flex-ns flex-column-ns flex-column-ns w-25-l">
-      <div className="bg-white shadow-1">
-        <div className="tc avatar">{avatar}</div>
-        <h2 className="tc normal f4">{profile.name}</h2>
-        <div className="ph3">
-          <p>
-            <i className="fa fa-briefcase fa-fw mr3 w3-large teal" />
+    <article className="flex flex-column items-center pa4-l center mw1100px">
+      <h2 className="tc normal f1 fw1 teal">{profile.name}</h2>
+      <div className="flex flex-column justify-center align-center flex-row-l bt-l b--moon-gray pa4-l">
+        <div className="tc order-1-l ma4-l flex-l items-center-l">{avatar}</div>
+        {profile.about && (
+          <div className="order-0-l ma4">
+            <h3 className="tc normal f2 fw1 teal">About me</h3>
+            <div className="tc">
+              {profile.about
+                .split('\n')
+                .map((sentence, index) => <p key={'about-' + index}>{sentence}</p>)}
+            </div>
+          </div>
+        )}
+
+        <div className="ma4 flex flex-column items-center order-2-l justify-center">
+          <p className="w14em">
+            <i className="fa fa-briefcase  mr3 w3-large teal" />
             {profile.headline}
           </p>
-          {/* <p><i className="fa fa-home fa-fw mr3 w3-large teal"></i>London, UK</p> */}
-          <p>
-            <i className="fa fa-envelope fa-fw mr3 w3-large teal" />
+          {/* <p className="w14em"><i className="fa fa-home  mr3 w3-large teal"></i>London, UK</p> */}
+          <p className="w14em">
+            <i className="fa fa-envelope  mr3 w3-large teal" />
             {profile.email}
           </p>
-          <p>
-            <i className="fa fa-phone fa-fw mr3 w3-large teal" />
+          <p className="w14em">
+            <i className="fa fa-phone  mr3 w3-large teal" />
             {profile.phone && profile.phone.toString()}
           </p>
-          <hr />
 
-          <TopSkillsBlock skills={profile.skills} />
-          <LanguagesBlock />
+          {/* <TopSkillsBlock skills={profile.skills} />
+        <LanguagesBlock /> */}
         </div>
       </div>
     </article>

@@ -7,6 +7,7 @@ import { Award } from './award';
 import { Phone } from './phone';
 export class Profile extends ContentfulModel {
   name: string;
+  about: string;
   headline: string;
   email: string;
   phone: Phone;
@@ -19,6 +20,7 @@ export class Profile extends ContentfulModel {
   static fromContentful(data: ContentfulEntry): Profile {
     const profile = new Profile(data.sys.id);
     profile.name = data.fields.name;
+    profile.about = data.fields.about;
     profile.headline = data.fields.headline;
     profile.email = data.fields.email;
     profile.avatar = Asset.fromContentful(data.fields.avatar);

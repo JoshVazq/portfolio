@@ -1,0 +1,21 @@
+#skills {
+  ul {
+    li:hover .w4 {
+      width: 11em;
+    }
+
+    li .w4 {
+      transition: width 0.5s ease-in;
+    }
+
+    @media screen and (max-width: 60em) and (min-width: 30em) {
+      column-count: 2;
+      column-gap: 10%;
+    }
+
+    @media screen and (min-width: 60em) {
+      column-count: 3;
+      column-gap: 15%;
+    }
+  }
+}

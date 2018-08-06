@@ -13,9 +13,11 @@
     "*.css": "postcss"
   },
   "emmet.includeLanguages": {
-    "postcss": "css"
+    "postcss": "css",
+    "javascript": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
-    "postcss": "css"
+    "postcss": "css",
+    "javascript": "jsx"
   }
 }
