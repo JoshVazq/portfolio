@@ -9,14 +9,14 @@ function renderEducationList(list) {
   return list.sort(sortByFromDesc).map((education: Education, i) => (
     <div key={education.id} className="mb2 flex flex-column flex-row-l">
       <div className="ph4 w-25-l">
-        <h4 className="fw7 f4 mt4-l">{education.degree}</h4>
+        <h4 className="fw7 f4 mt4-l mid-gray">{education.degree}</h4>
         <h4 className="fw4">
           <i className="fa fa-calendar  mr3" />
           {education.dates.toString()}
         </h4>
       </div>
       <div className="ph4 w-75-l">
-        <h4 className="teal">
+        <h4 className="fw7 mt4-l">
           <i className="fa fa-building  mr3" />
           {education.school}
         </h4>

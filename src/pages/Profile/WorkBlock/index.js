@@ -12,14 +12,14 @@ function renderExperienceList(list) {
   return list.sort(sortByFromDesc).map((experience: Experience, i) => (
     <div key={experience.id} className="mb2 flex flex-column flex-row-l">
       <div className="ph4 w-25-l">
-        <h4 className="fw7 f4 mt4-l">{experience.company}</h4>
+        <h4 className="fw7 f4 mt4-l mid-gray">{experience.title}</h4>
         <h4 className="fw4">
           <i className="fa fa-calendar  mr3" />
           {experience.dates.toString()}
         </h4>
       </div>
       <div className="ph4 w-75-l">
-        <h4 className="fw7 mt4-l">{experience.title}</h4>
+        <h4 className="fw7 mt4-l">{experience.company}</h4>
         {experience.description && (
           <Markdown className="db" /* options={markDownOptions} */>
             {experience.description}

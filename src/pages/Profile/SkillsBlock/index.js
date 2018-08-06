@@ -5,6 +5,7 @@ import './style.css';
 type Props = {
   skills: Skill[]
 };
+const sortSkill = (a, b) => b.level - a.level;
 
 const starClasses = ['fa fa-star', 'fa fa-star-half-alt', 'far fa-star'];
 /* 
@@ -71,7 +72,7 @@ export const SkillsBlock = ({ skills }: Props) => (
       <i className="fa fa-asterisk  mr3 w3-xxlarge teal" />
       Skills
     </h3>
-    <ul className="list pl0">{skills.map(renderSkill)}</ul>
+    <ul className="list pl0">{skills.sort(sortSkill).map(renderSkill)}</ul>
     <br />
   </div>
 );
