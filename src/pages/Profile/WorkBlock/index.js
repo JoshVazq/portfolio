@@ -10,7 +10,7 @@ type Props = {
 
 function renderExperienceList(list) {
   return list.sort(sortByFromDesc).map((experience: Experience, i) => (
-    <div key={experience.id} className="mb2 flex flex-column flex-row-l">
+    <div key={experience.id} className="mb2 flex flex-column flex-row-l  justify-between-l">
       <div className="w-30-l">
         <h4 className="fw7 f4 mt4-l mid-gray">{experience.title}</h4>
         <h4 className="fw4">
@@ -18,7 +18,7 @@ function renderExperienceList(list) {
           {experience.dates.toString()}
         </h4>
       </div>
-      <div className="w-70-l">
+      <div className="w-60-l">
         <h4 className="fw7 mt4-l">{experience.company}</h4>
         {experience.description && (
           <Markdown className="db" /* options={markDownOptions} */>

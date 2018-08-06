@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'markdown-to-jsx';
 import { Education } from 'model/education';
 import { sortByFromDesc } from '../../../utils';
 
@@ -7,7 +8,7 @@ type Props = {
 };
 function renderEducationList(list) {
   return list.sort(sortByFromDesc).map((education: Education, i) => (
-    <div key={education.id} className="mb2 flex flex-column flex-row-l">
+    <div key={education.id} className="mb2 flex flex-column flex-row-l justify-between-l">
       <div className="w-30-l">
         <h4 className="fw7 f4 mt4-l mid-gray">{education.degree}</h4>
         <h4 className="fw4">
@@ -15,13 +16,17 @@ function renderEducationList(list) {
           {education.dates.toString()}
         </h4>
       </div>
-      <div className="w-70-l">
+      <div className="w-60-l">
         <h4 className="fw7 mt4-l">
           <i className="fa fa-building  mr3" />
           {education.school}
         </h4>
+        {education.description && (
+          <Markdown className="db list pl0" /* options={markDownOptions} */>
+            {education.description}
+          </Markdown>
+        )}
       </div>
-      {/* <p>{education.description}</p> */}
     </div>
   ));
 }
