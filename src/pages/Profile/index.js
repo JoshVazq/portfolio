@@ -28,7 +28,9 @@ export class ProfilePage extends Component<Props> {
             <WorkBlock experience={profile.experience} />
             <EducationBlock education={profile.education} />
           </div>
-          <SkillsBlock skills={profile.skills} />
+          <div className="bg-white ph3">
+            <SkillsBlock skills={profile.skills} />
+          </div>
         </div>
 
         /*  <footer className="ph3 bg-teal w3-center w3-margin-top">

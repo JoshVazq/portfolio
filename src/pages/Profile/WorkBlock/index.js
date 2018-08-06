@@ -11,14 +11,14 @@ type Props = {
 function renderExperienceList(list) {
   return list.sort(sortByFromDesc).map((experience: Experience, i) => (
     <div key={experience.id} className="mb2 flex flex-column flex-row-l">
-      <div className="ph4 w-25-l">
+      <div className="w-30-l">
         <h4 className="fw7 f4 mt4-l mid-gray">{experience.title}</h4>
         <h4 className="fw4">
           <i className="fa fa-calendar  mr3" />
           {experience.dates.toString()}
         </h4>
       </div>
-      <div className="ph4 w-75-l">
+      <div className="w-70-l">
         <h4 className="fw7 mt4-l">{experience.company}</h4>
         {experience.description && (
           <Markdown className="db" /* options={markDownOptions} */>
@@ -45,8 +45,8 @@ function renderExperienceList(list) {
 }
 
 export const WorkBlock = ({ experience }: Props) => (
-  <div className="bb pb4 b--moon-gray center mw1100px">
-    <h3 className="teal normal f3 fw1 teal pl4">
+  <div className="bb pb4 ph4 b--moon-gray center-l w-90-l">
+    <h3 className="teal normal f3 fw1 teal">
       <i className="fa fa-suitcase  mr3 w3-xxlarge" />
       Work Experience
     </h3>

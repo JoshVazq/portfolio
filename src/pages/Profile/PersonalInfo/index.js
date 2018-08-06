@@ -1,8 +1,8 @@
 import React from 'react';
 import { Profile } from 'model/profile';
 
-import { TopSkillsBlock } from './TopSkillsBlock';
-import { LanguagesBlock } from './LanguagesBlock';
+/* import { TopSkillsBlock } from './TopSkillsBlock';
+import { LanguagesBlock } from './LanguagesBlock'; */
 
 type Props = {
   profile: Profile

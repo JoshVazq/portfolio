@@ -67,7 +67,7 @@ const renderSkill = (skill: Skill) => {
 /* fl shadow-1 mv3  bg-white pa3
  */
 export const SkillsBlock = ({ skills }: Props) => (
-  <div className="mv3  bg-white ph3 center-l w-90-l" id="skills">
+  <div className="mv3 ph4  center-l w-90-l" id="skills">
     <h3 className="teal normal f3 fw1 teal">
       <i className="fa fa-asterisk  mr3 w3-xxlarge teal" />
       Skills
