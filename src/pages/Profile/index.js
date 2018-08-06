@@ -21,16 +21,14 @@ export class ProfilePage extends Component<Props> {
     const profile = this.props.profile;
     if (profile) {
       return (
-        <div className="mt3 gray" /* style={{ maxWidth: '1400px' }} */>
-          <div className="ph2">
-            <PersonalInfo profile={profile} />
-
-            <div className="ph2 ml7-ns ml0-l fr-l w-75-l">
-              <WorkBlock experience={profile.experience} />
-              <EducationBlock education={profile.education} />
-              <SkillsBlock skills={profile.skills} />
-            </div>
+        <div className="flex flex-column gray" /* style={{ maxWidth: '1400px' }} */>
+          <PersonalInfo profile={profile} />
+          <div className="bg-ecru-white ph3">
+            <h2 className="teal tc normal f1 fw1 teal">Experiences</h2>
+            <WorkBlock experience={profile.experience} />
+            <EducationBlock education={profile.education} />
           </div>
+          <SkillsBlock skills={profile.skills} />
         </div>
 
         /*  <footer className="ph3 bg-teal w3-center w3-margin-top">

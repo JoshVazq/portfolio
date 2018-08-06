@@ -25,7 +25,7 @@ export const TopSkillsBlock = ({ skills }: Props) => (
   <div>
     <p className="w3-large">
       <b>
-        <i className="fa fa-asterisk fa-fw mr3 teal" />
+        <i className="fa fa-asterisk  mr3 teal" />
         Top Skills
       </b>
     </p>

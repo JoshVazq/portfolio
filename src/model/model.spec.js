@@ -53,18 +53,23 @@ describe('model', () => {
     });
   });
   describe('Period ', () => {
+    const intl = new Intl.DateTimeFormat([], { year: 'numeric', month: 'short' });
     it(' toString should return from to dates', () => {
-      const period = new Period(new Date(2012, 2), new Date(2013, 3));
+      const from = new Date(2012, 2);
+      const to = new Date(2013, 3);
+      const period = new Period(from, to);
       const periodString = period.toString();
-      expect(periodString).toEqual('Mar 2012 - Apr 2013');
+      //intl/localstring does not work well with node
+      expect(periodString).toEqual(`${intl.format(from)} - ${intl.format(to)}`);
     });
     it(' toString should return only one date if there is not to', () => {
-      const period = new Period(new Date(2012, 2));
+      const from = new Date(2012, 2);
+      const period = new Period(from);
       const periodString = period.toString();
-      expect(periodString).toEqual('Mar 2012 - ');
+      expect(periodString).toEqual(`${intl.format(from)} - present`);
     });
   });
-  describe('Period ', () => {
+  describe('Phone ', () => {
     it(' toString should return the phone with prefix', () => {
       const phone = new Phone('');
       phone.prefix = '34';

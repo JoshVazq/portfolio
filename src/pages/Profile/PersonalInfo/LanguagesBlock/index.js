@@ -4,7 +4,7 @@ export const LanguagesBlock = () => (
   <div>
     <p className="w3-large w3-text-theme">
       <b>
-        <i className="fa fa-globe fa-fw mr3 teal" />Languages
+        <i className="fa fa-globe  mr3 teal" />Languages
       </b>
     </p>
     <p>English</p>

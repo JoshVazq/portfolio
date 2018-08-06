@@ -18,7 +18,7 @@ export function sortByFromDesc(a: WithDates, b: WithDates) {
 export const markDownOptions = {
   overrides: {
     a: ({ children, ...props }) => (
-      <a {...props} target="_blank">
+      <a className="teal" {...props} target="_blank">
         {children}
       </a>
     )
